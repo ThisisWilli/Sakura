@@ -9,6 +9,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @program: sakura
@@ -16,7 +17,7 @@ import io.netty.handler.codec.string.StringEncoder;
  * @author: Hoodie_Willi
  * @create: 2020-04-28 15:26
  **/
-
+@Slf4j
 public class NettyServer {
     // 编写一个方法，完成对NettyServer的初始化和启动
 
@@ -25,6 +26,7 @@ public class NettyServer {
     }
 
     private static void startServerMethod01(String hostname, int port){
+//        log.info("启动成功：" + "http://" + hostname + ":" + port + "/");
         NioEventLoopGroup bossGroup = new NioEventLoopGroup(1);
         NioEventLoopGroup workerGroup = new NioEventLoopGroup();
 
