@@ -9,11 +9,13 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
+import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Proxy;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @program: sakura
@@ -21,17 +23,24 @@ import java.util.concurrent.Future;
  * @author: Hoodie_Willi
  * @create: 2020-04-28 16:17
  **/
-
+@Slf4j
 public class NettyClient {
     private static ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
+    public static ExecutorService getExecutor() {
+        return executor;
+    }
+
+
     private static NettyClientHandler client;
+    private AtomicInteger count = new AtomicInteger(0);
 
     // 使用代理模式，获取一个代理对象
     public Object getBean(final Class<?> serviceClass, final String providerName){
-        return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader()
-        , new Class<?>[]{serviceClass}, (proxy, method, args)->{
+        return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(), new Class<?>[]{serviceClass}, (proxy, method, args)->{
             // 客户端每调用一次hello，就进入到该代码
+
+            log.info("被调用" + count.getAndIncrement());
             if (client == null){
                 initClient();
             }

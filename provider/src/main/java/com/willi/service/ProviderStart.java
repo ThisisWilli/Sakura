@@ -7,7 +7,6 @@ package com.willi.service; /**
 
 import com.willi.netty.NettyServer;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.log4j.Logger;
 
 
 /**
@@ -17,13 +16,12 @@ import org.apache.log4j.Logger;
 @Slf4j
 public class ProviderStart {
 
+    public static final ProviderZK zk = new ProviderZK();
+
     public static void main(String[] args) {
 
-        log.debug("输出DEBUG级别日志");
-        log.info("输出INFO级别日志");
-        log.warn("输出WARN级别日志");
-        log.error("输出ERROR级别日志");
-        NettyServer.startServer("localhost", 7000);
+
+        NettyServer.startServer("localhost", 7000, zk, 1);
 
     }
 }

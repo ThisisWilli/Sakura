@@ -2,6 +2,7 @@ package com.willi.netty;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.Callable;
 
@@ -11,7 +12,7 @@ import java.util.concurrent.Callable;
  * @author: Hoodie_Willi
  * @create: 2020-04-28 15:51
  **/
-
+@Slf4j
 public class NettyClientHandler extends ChannelInboundHandlerAdapter implements Callable {
 
     private ChannelHandlerContext context;
@@ -22,12 +23,14 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         // 在其他方法中会使用到ctx
+        log.info("channelActive被调用");
         context = ctx;
     }
 
     // 收到服务起的数据后，调用方法  4
     @Override
     public synchronized void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        log.info("channelRead被调用");
         result = msg.toString();
         // 唤醒等待的线程
         notify();
@@ -44,12 +47,14 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
      * @throws Exception
      */
     public synchronized Object call() throws Exception {
+        log.info("call被调用并即将进入阻塞");
         context.writeAndFlush(paras);
         // 进行wait()， 等待channelRead得到服务器结果之后，唤醒
         wait();
         // 服务方返回的结果
-        System.out.println("收到消息" + result.toString());
-        return result.toString();
+        log.info("channelRead方法读完数据并唤醒");
+        System.out.println("收到消息" + result);
+        return result;
     }
 
     // 2

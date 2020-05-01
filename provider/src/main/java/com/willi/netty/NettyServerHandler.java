@@ -3,16 +3,21 @@ package com.willi.netty;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import com.willi.service.HelloServiceImpl;
-import org.jboss.netty.bootstrap.ClientBootstrap;
 
 /**
  * @program: sakura
- * @description:
+ * @description: server端的handler处理逻辑
  * @author: Hoodie_Willi
  * @create: 2020-04-28 15:37
  **/
 
 public class NettyServerHandler extends ChannelInboundHandlerAdapter {
+    /**
+     * 在channel中数据如果被读到，则触发channelRead方法
+     * @param ctx
+     * @param msg
+     * @throws Exception
+     */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         // 获取客户端发送的消息，并调用服务
