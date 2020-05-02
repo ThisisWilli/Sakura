@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8506997c-4a74-4c1b-8678-5a66fefa3eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerZK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderZK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sakura.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sakura.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerZK.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerZK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClient$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/willi/service/ConsumerStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/willi/service/ConsumerStart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/netty/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/netty/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/netty/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/netty/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/netty/NettyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/netty/NettyServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/netty/NettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/netty/NettyServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/netty/NettyServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/netty/NettyServerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/service/HelloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/service/HelloService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/service/HelloServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/service/HelloServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderZK.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderZK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderZK.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderZK.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +144,8 @@
       <workItem from="1588235542227" duration="1016000" />
       <workItem from="1588236671076" duration="5240000" />
       <workItem from="1588255329097" duration="359000" />
-      <workItem from="1588256084755" duration="19834000" />
+      <workItem from="1588256084755" duration="20062000" />
+      <workItem from="1588401661138" duration="2581000" />
     </task>
     <servers />
   </component>

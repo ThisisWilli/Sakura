@@ -17,12 +17,20 @@ public class ConsumerStart {
         // 创建一个消费者
         NettyClient consumer = new NettyClient();
 
-        // 创建代理对象
-        HelloService service = (HelloService) consumer.getBean(HelloService.class, providerName);
-        zk.subscribe("/sakura/provider");
-        // 通过代理对象调用服务提供者的方法
-        String res = service.hello("你好 dubbo");
-        System.out.println("嗲用结果为" + res);
+        String subscribe = zk.subscribe("/sakura/provider");
+        if (subscribe != null){
+            zk.register("/sakura/consumer", subscribe.split(":")[0], Integer.parseInt(subscribe.split(":")[1]));
+            // 创建代理对象
+            HelloService service =
+                    (HelloService) consumer.getBean(HelloService.class, providerName, subscribe.split(":")[0], Integer.parseInt(subscribe.split(":")[1]));
+
+            // 通过代理对象调用服务提供者的方法git
+            String res = service.hello("你好 dubbo");
+            System.out.println("嗲用结果为" + res);
+        }else {
+            log.error("没有可用的服务");
+        }
+
         NettyClient.getExecutor().shutdownNow();
         log.info(String.valueOf(NettyClient.getExecutor().isTerminated()));
     }

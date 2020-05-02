@@ -35,14 +35,19 @@ public class NettyClient {
     private static NettyClientHandler client;
     private AtomicInteger count = new AtomicInteger(0);
 
-    // 使用代理模式，获取一个代理对象
-    public Object getBean(final Class<?> serviceClass, final String providerName){
+    /**
+     * 获取一个代理对象
+     * @param serviceClass 代理的接口，provider和consumer端都实现了这个接口
+     * @param providerName 协议头
+     * @return 返回代理对象
+     */
+    public Object getBean(final Class<?> serviceClass, final String providerName, String hostName, int port){
         return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(), new Class<?>[]{serviceClass}, (proxy, method, args)->{
             // 客户端每调用一次hello，就进入到该代码
 
             log.info("被调用" + count.getAndIncrement());
             if (client == null){
-                initClient();
+                initClient(hostName, port);
             }
             // 设置要发给服务器端的信息
                     // providerName协议头， arg[0]就是客户端调用api hello的参数
@@ -53,7 +58,7 @@ public class NettyClient {
     }
 
     // 初始化客户端
-    private static void initClient(){
+    private static void initClient(String hostName, int port){
          client = new NettyClientHandler();
 
         NioEventLoopGroup group = new NioEventLoopGroup();
@@ -73,7 +78,7 @@ public class NettyClient {
                         }
                 );
         try {
-            bootstrap.connect("localhost", 7000).sync();
+            bootstrap.connect(hostName, port).sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
