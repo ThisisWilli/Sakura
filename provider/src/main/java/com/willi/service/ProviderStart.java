@@ -1,4 +1,5 @@
-package com.willi.service; /**
+package com.willi.service;
+/**
  * @program: sakura
  * @description:
  * @author: Hoodie_Willi
@@ -19,9 +20,6 @@ public class ProviderStart {
     public static final ProviderZK zk = new ProviderZK();
 
     public static void main(String[] args) {
-
-
         NettyServer.startServer("localhost", 7000, zk, 1);
-
     }
 }

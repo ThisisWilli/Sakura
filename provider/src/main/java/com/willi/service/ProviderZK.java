@@ -29,7 +29,10 @@ public class ProviderZK {
      * */
     public synchronized void register(String hostName, int port, int providerNum){
         try {
-            ZooKeeper zk = new ZooKeeper("localhost:2181,localhost:2182,localhost:2183", 3000, (watchedEvent)->{
+            // mac上的配置localhost:2181,localhost:2182,localhost:2183
+            // win上的配置node02:2181, node03:2181, node04:2181
+
+            ZooKeeper zk = new ZooKeeper("node02:2181, node03:2181, node04:2181", 3000, (watchedEvent)->{
                 log.info("====已经触发了 " + watchedEvent.getType() + " 类型的事件====");
                 log.info("====节点中的路径为：" + watchedEvent.getPath() + "====");
             });
@@ -43,7 +46,7 @@ public class ProviderZK {
                     List<String> providerChildren = zk.getChildren(PATH + "/provider", true);
                     if (!providerChildren.contains("server" + providerNum)){
                         zk.create(PATH + "/provider/server" + (providerNum), (hostName + ":"+ port).getBytes()
-                                , ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+                                , ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
                         log.info("server" + providerNum + "注册成功");
                     }else {
                         zk.setData(PATH + "/provider/server" + (providerNum), (hostName + ":"+ port).getBytes()
@@ -53,12 +56,13 @@ public class ProviderZK {
                 // provider已经被注册过，则不创建新的Znode
             }else {
                 log.info("还没有server被创建过");
+                // 创建总的目录
                 zk.create(PATH, ("that's sakura dir").getBytes()
                         , ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
                 zk.create(PATH + "/provider", ("that's servers dir").getBytes()
                         , ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
                 zk.create(PATH + "/provider/server" + providerNum, (hostName + ":"+ port).getBytes()
-                        , ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+                        , ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
                 log.info("创建" + hostName + ":" + port + "服务");
             }
         } catch (IOException | KeeperException | InterruptedException e) {

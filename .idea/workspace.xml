@@ -2,16 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8506997c-4a74-4c1b-8678-5a66fefa3eae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_49_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_49_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerZK.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerZK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClient$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/willi/netty/NettyClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/provider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/netty/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/netty/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderStart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderZK.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderZK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/META-INF/provider.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderStart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderZK.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderZK.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,9 +52,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="$USER_HOME$/MavenDocument" />
-        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.6.0/conf/settings.xml" />
+        <option name="localRepository" value="D:\Idea\maven\LocalWareHouse" />
+        <option name="mavenHome" value="D:/Idea/maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Idea\maven\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -48,17 +63,23 @@
   </component>
   <component name="ProjectId" id="1b1GSxjMKn3fARYZJhKzvjIijr6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -66,19 +87,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.ConsumerStart">
+  <component name="RunManager" selected="Application.ProviderStart">
     <configuration name="ConsumerStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.willi.service.ConsumerStart" />
       <module name="consumer" />
@@ -114,11 +123,23 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConsumerStart" />
         <item itemvalue="Application.ProviderStart" />
+        <item itemvalue="Application.ConsumerStart" />
         <item itemvalue="Application.TestService" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -146,6 +167,10 @@
       <workItem from="1588255329097" duration="359000" />
       <workItem from="1588256084755" duration="20062000" />
       <workItem from="1588401661138" duration="2581000" />
+      <workItem from="1592362961965" duration="989000" />
+      <workItem from="1594469846740" duration="2290000" />
+      <workItem from="1594900715530" duration="2414000" />
+      <workItem from="1595075869506" duration="8206000" />
     </task>
     <servers />
   </component>
@@ -164,5 +189,36 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="177" key="#Project_Structure" timestamp="1592363306197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="177" key="#Project_Structure/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1592363306197" />
+    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1592363078039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1592363078039" />
+    <state width="1875" height="364" key="GridCell.Tab.0.bottom" timestamp="1595146584576">
+      <screen x="0" y="0" width="1920" height="1049" />
+    </state>
+    <state width="1875" height="364" key="GridCell.Tab.0.bottom/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146584576" />
+    <state width="1875" height="364" key="GridCell.Tab.0.center" timestamp="1595146584576">
+      <screen x="0" y="0" width="1920" height="1049" />
+    </state>
+    <state width="1875" height="364" key="GridCell.Tab.0.center/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146584576" />
+    <state width="1875" height="364" key="GridCell.Tab.0.left" timestamp="1595146584576">
+      <screen x="0" y="0" width="1920" height="1049" />
+    </state>
+    <state width="1875" height="364" key="GridCell.Tab.0.left/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146584576" />
+    <state width="1875" height="364" key="GridCell.Tab.0.right" timestamp="1595146584576">
+      <screen x="0" y="0" width="1920" height="1049" />
+    </state>
+    <state width="1875" height="364" key="GridCell.Tab.0.right/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146584576" />
+    <state x="461" y="151" key="SettingsEditor" timestamp="1595145914148">
+      <screen x="0" y="0" width="1920" height="1049" />
+    </state>
+    <state x="461" y="150" key="SettingsEditor/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1592363115450" />
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595145914148" />
   </component>
 </project>

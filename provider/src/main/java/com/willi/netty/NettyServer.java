@@ -22,9 +22,15 @@ import lombok.extern.slf4j.Slf4j;
 public class NettyServer {
     // 编写一个方法，完成对NettyServer的初始化和启动
 
+    /**
+     * 对nettyServer的初始化和启动
+     * @param hostName
+     * @param port
+     * @param zk
+     * @param providerNum
+     */
     public static void startServer(String hostName, int port, ProviderZK zk, int providerNum){
         startServerMethod01(hostName, port, providerNum, zk);
-
 //        log.error("provider" + hostName + ":" + port + "出错");
     }
 
