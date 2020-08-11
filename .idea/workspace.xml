@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8506997c-4a74-4c1b-8678-5a66fefa3eae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_49_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_49_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_14.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/provider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/netty/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/netty/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderZK.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/willi/service/ProviderZK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/META-INF/provider.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderStart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderZK.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/willi/service/ProviderZK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/netty/NettyClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/willi/service/ConsumerStart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +121,9 @@
       </list>
     </option>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INTERFACES,SHOW_PROPERTIES,ALPHA_COMPARATOR" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -170,8 +153,19 @@
       <workItem from="1592362961965" duration="989000" />
       <workItem from="1594469846740" duration="2290000" />
       <workItem from="1594900715530" duration="2414000" />
-      <workItem from="1595075869506" duration="8206000" />
+      <workItem from="1595075869506" duration="9030000" />
+      <workItem from="1596119151273" duration="6000" />
+      <workItem from="1596541661270" duration="555000" />
+      <workItem from="1597146031752" duration="6857000" />
     </task>
+    <task id="LOCAL-00001" summary="修改zookeeper部分">
+      <created>1595146615942</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595146615942</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,35 +184,47 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改zookeeper部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改zookeeper部分" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="552" y="177" key="#Project_Structure" timestamp="1592363306197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="177" key="#Project_Structure/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1592363306197" />
+    <state x="527" y="117" key="CommitChangelistDialog2" timestamp="1595146613446">
+      <screen x="0" y="0" width="1920" height="1049" />
+    </state>
+    <state x="527" y="117" key="CommitChangelistDialog2/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146613446" />
     <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1592363078039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1592363078039" />
-    <state width="1875" height="364" key="GridCell.Tab.0.bottom" timestamp="1595146584576">
+    <state width="1875" height="364" key="GridCell.Tab.0.bottom" timestamp="1595157323181">
       <screen x="0" y="0" width="1920" height="1049" />
     </state>
-    <state width="1875" height="364" key="GridCell.Tab.0.bottom/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146584576" />
-    <state width="1875" height="364" key="GridCell.Tab.0.center" timestamp="1595146584576">
+    <state width="1875" height="364" key="GridCell.Tab.0.bottom/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595157323181" />
+    <state width="1875" height="364" key="GridCell.Tab.0.center" timestamp="1595157323181">
       <screen x="0" y="0" width="1920" height="1049" />
     </state>
-    <state width="1875" height="364" key="GridCell.Tab.0.center/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146584576" />
-    <state width="1875" height="364" key="GridCell.Tab.0.left" timestamp="1595146584576">
+    <state width="1875" height="364" key="GridCell.Tab.0.center/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595157323181" />
+    <state width="1875" height="364" key="GridCell.Tab.0.left" timestamp="1595157323181">
       <screen x="0" y="0" width="1920" height="1049" />
     </state>
-    <state width="1875" height="364" key="GridCell.Tab.0.left/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146584576" />
-    <state width="1875" height="364" key="GridCell.Tab.0.right" timestamp="1595146584576">
+    <state width="1875" height="364" key="GridCell.Tab.0.left/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595157323181" />
+    <state width="1875" height="364" key="GridCell.Tab.0.right" timestamp="1595157323181">
       <screen x="0" y="0" width="1920" height="1049" />
     </state>
-    <state width="1875" height="364" key="GridCell.Tab.0.right/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146584576" />
+    <state width="1875" height="364" key="GridCell.Tab.0.right/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595157323181" />
     <state x="461" y="151" key="SettingsEditor" timestamp="1595145914148">
       <screen x="0" y="0" width="1920" height="1049" />
     </state>
     <state x="461" y="150" key="SettingsEditor/0.0.1920.1040/-1440.0.1440.860@0.0.1920.1040" timestamp="1592363115450" />
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595145914148" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1595146619523">
+      <screen x="0" y="0" width="1920" height="1049" />
+    </state>
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1049/-1440.0.1440.870@0.0.1920.1049" timestamp="1595146619523" />
   </component>
 </project>

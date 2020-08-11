@@ -8,18 +8,19 @@ import java.util.concurrent.Callable;
 
 /**
  * @program: sakura
- * @description:
+ * @description: 继承了ChannelInboundHandlerAdapter可以对出站和入站的数据进行处理
  * @author: Hoodie_Willi
  * @create: 2020-04-28 15:51
  **/
 @Slf4j
 public class NettyClientHandler extends ChannelInboundHandlerAdapter implements Callable {
 
+    // 保存channel的所有上下文信息
     private ChannelHandlerContext context;
     private String result;
     private String paras;
 
-    // 与服务器的连接创建后，就会被调用 first
+    // 通道就绪事件与服务器的连接创建后，就会被调用 first
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         // 在其他方法中会使用到ctx
@@ -27,7 +28,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
         context = ctx;
     }
 
-    // 收到服务起的数据后，调用方法  4
+    // 通道数据读取收到服务起的数据后，调用方法  4
     @Override
     public synchronized void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         log.info("channelRead被调用");

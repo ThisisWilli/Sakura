@@ -20,7 +20,7 @@ public class ConsumerStart {
         String subscribe = zk.subscribe("/sakura/provider");
         if (subscribe != null){
             zk.register("/sakura/consumer", subscribe.split(":")[0], Integer.parseInt(subscribe.split(":")[1]));
-            // 创建代理对象
+            // 如果有这个服务 创建代理对象
             HelloService service =
                     (HelloService) consumer.getBean(HelloService.class, providerName, subscribe.split(":")[0], Integer.parseInt(subscribe.split(":")[1]));
 

@@ -47,6 +47,7 @@ public class NettyClient {
 
             log.info("被调用" + count.getAndIncrement());
             if (client == null){
+                // 初始化一个client传入host和port，创建channel
                 initClient(hostName, port);
             }
             // 设置要发给服务器端的信息
@@ -70,9 +71,13 @@ public class NettyClient {
                         new ChannelInitializer<SocketChannel>() {
                             @Override
                             protected void initChannel(SocketChannel ch) throws Exception {
+                                // 一个channel包含了一个channelPipeline，而ChannelPipeLine中有维护了一个由ChannelHandlerConetext
                                 ChannelPipeline pipeline = ch.pipeline();
+                                // 加入解码器
                                 pipeline.addLast(new StringDecoder());
+                                // 加入编码器
                                 pipeline.addLast(new StringEncoder());
+                                // 加入自己的业务处理handler
                                 pipeline.addLast(client);
                             }
                         }
