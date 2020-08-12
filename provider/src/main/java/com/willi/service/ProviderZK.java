@@ -32,7 +32,7 @@ public class ProviderZK {
             // mac上的配置localhost:2181,localhost:2182,localhost:2183
             // win上的配置node02:2181, node03:2181, node04:2181
 
-            ZooKeeper zk = new ZooKeeper("node02:2181, node03:2181, node04:2181", 3000, (watchedEvent)->{
+            ZooKeeper zk = new ZooKeeper("localhost:2181, localhost:2182, localhost:2183", 3000, (watchedEvent)->{
                 log.info("====已经触发了 " + watchedEvent.getType() + " 类型的事件====");
                 log.info("====节点中的路径为：" + watchedEvent.getPath() + "====");
             });

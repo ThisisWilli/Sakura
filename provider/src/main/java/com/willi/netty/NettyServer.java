@@ -1,5 +1,6 @@
 package com.willi.netty;
 
+import com.willi.service.ProviderRegister;
 import com.willi.service.ProviderZK;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -8,8 +9,9 @@ import io.netty.channel.ChannelPipeline;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
+import io.netty.handler.codec.serialization.ClassResolvers;
+import io.netty.handler.codec.serialization.ObjectDecoder;
+import io.netty.handler.codec.serialization.ObjectEncoder;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -29,12 +31,12 @@ public class NettyServer {
      * @param zk
      * @param providerNum
      */
-    public static void startServer(String hostName, int port, ProviderZK zk, int providerNum){
-        startServerMethod01(hostName, port, providerNum, zk);
+    public static void startServer(String hostName, int port, ProviderZK zk, int providerNum, ProviderRegister register){
+        startServerMethod01(hostName, port, providerNum, zk, register);
 //        log.error("provider" + hostName + ":" + port + "出错");
     }
 
-    private static void startServerMethod01(String hostName, int port, int providerNum, ProviderZK zk){
+    private static void startServerMethod01(String hostName, int port, int providerNum, ProviderZK zk, ProviderRegister register){
 //        log.info("启动成功：" + "http://" + hostname + ":" + port + "/");
         NioEventLoopGroup bossGroup = new NioEventLoopGroup(1);
         NioEventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -52,10 +54,11 @@ public class NettyServer {
                             // 获取pipeline并定义流程
                             ChannelPipeline pipeline = ch.pipeline();
                             // 字符串解码和编码
-                            pipeline.addLast("decoder", new StringDecoder());
-                            pipeline.addLast("encoder", new StringEncoder());
+//                            pipeline.addLast("decoder", new StringDecoder());
+                            pipeline.addLast("decoder", new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.cacheDisabled(null)));
+                            pipeline.addLast("encoder", new ObjectEncoder());
                             // 自己逻辑的handler
-                            pipeline.addLast("handler", new NettyServerHandler());
+                            pipeline.addLast("handler", new NettyServerHandler(register));
                         }
                     });
             zk.register(hostName, port, providerNum);

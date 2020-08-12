@@ -20,6 +20,9 @@ public class ProviderStart {
     public static final ProviderZK zk = new ProviderZK();
 
     public static void main(String[] args) {
-        NettyServer.startServer("localhost", 7000, zk, 1);
+        ProviderRegister providerRegister = new ProviderRegister();
+        // 注册一个接口的实现类
+        providerRegister.addService(new HelloServiceImpl(), HelloService.class);
+        NettyServer.startServer("localhost", 7000, zk, 1, providerRegister);
     }
 }

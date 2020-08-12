@@ -1,5 +1,8 @@
 package com.willi.service;
 
-public interface HelloService {
+import java.io.Serializable;
+
+public interface HelloService extends Serializable {
+    static final long serialVersionUID = -8020775750799142361L;
     String hello(String msg);
 }

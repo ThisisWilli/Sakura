@@ -1,5 +1,6 @@
 package com.willi.netty;
 
+import com.willi.service.RpcProtocol;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +19,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
     // 保存channel的所有上下文信息
     private ChannelHandlerContext context;
     private String result;
-    private String paras;
+    private RpcProtocol paras;
 
     // 通道就绪事件与服务器的连接创建后，就会被调用 first
     @Override
@@ -59,7 +60,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
     }
 
     // 2
-    void setPara(String para){
+    void setPara(RpcProtocol para){
         this.paras = para;
     }
 }
