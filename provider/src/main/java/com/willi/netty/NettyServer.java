@@ -70,7 +70,7 @@ public class NettyServer {
 
 
         } catch (Exception e) {
-            log.error("version 1.0.1 error", e);
+            log.error("the version 1.0.1 error", e);
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
