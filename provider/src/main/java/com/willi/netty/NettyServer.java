@@ -33,6 +33,7 @@ public class NettyServer {
      */
     public static void startServer(String hostName, int port, ProviderZK zk, int providerNum, ProviderRegister register){
         startServerMethod01(hostName, port, providerNum, zk, register);
+        log.info("version 1.0.1...");
 //        log.error("provider" + hostName + ":" + port + "出错");
     }
 
@@ -69,7 +70,7 @@ public class NettyServer {
 
 
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("version 1.0.1 error", e);
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
