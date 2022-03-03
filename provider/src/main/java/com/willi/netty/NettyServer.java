@@ -66,6 +66,7 @@ public class NettyServer {
             // server绑定端口监听
             ChannelFuture channelFuture = serverBootstrap.bind(hostName, port).sync();
             channelFuture.channel().closeFuture().sync();
+            log.info("version1.0.0");
 
 
         } catch (Exception e) {
